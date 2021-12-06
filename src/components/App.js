@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
+import SearchBar from './SearchBar'
 
-function App() {
-    return (
-        <div>
-           Hello 
-        </div>
-    )
+export default class App extends Component {
+    render() {
+        return (
+            <div className="ui container">
+                <SearchBar/>
+            </div>
+        )
+    }
 }
 
-export default App
