@@ -13,23 +13,16 @@ const App=()=> {
         onTermSubmit('cars')
     },[])
 
-
-
-    const onTermSubmit = async term => {   
+    const onTermSubmit = async term =>   { 
         const response = await youtube.get('/search', {
             params: { 
                 q: term
             }
         }) 
 
-        setSelectedVideo(response.data.items[0])
-        setVideos(response.data.items)
-    }
-
-    const onVideoSelect = (video) => {
-        setSelectedVideo(video)
-      };
-
+    setVideos(response.data.items);
+    setSelectedVideo(response.data.items[0]);
+    };
    
         return (
             <div className="ui container">
@@ -41,7 +34,7 @@ const App=()=> {
                         </div>
                         <div className='five wide column'>
                             <VideoList 
-                                onVideoSelect={onVideoSelect} 
+                                onVideoSelect={setSelectedVideo} 
                                 videos={videos} 
                             />
                         </div>  
@@ -50,6 +43,7 @@ const App=()=> {
             </div>
         )
     }
+
 
     export default App
 
