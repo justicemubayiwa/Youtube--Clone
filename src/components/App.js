@@ -11,7 +11,7 @@ export default class App extends Component {
     }
 
     componentDidMount(){
-        this.onTermSubmit('Lambo')
+        this.onTermSubmit('cars')
     }
 
     onTermSubmit = async term => {   
