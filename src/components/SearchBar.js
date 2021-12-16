@@ -10,15 +10,22 @@ const SearchBar = ({onFormSubmit}) => {
     }
 
     return (
-        <div className="search-bar ui segment">
+        <div style={{marginTop: '20px',}} className="search-bar ui segment">
             <form onSubmit={onSubmit} className="ui form">
                 <div className="field">
                     <label>Video Search</label>
-                    <input 
-                        type="text"  
-                        value={term}
-                        onChange={(e)=> setTerm(e.target.value)}
-                    />
+                    <div style={{display: 'flex',}} >
+                        <input 
+                            type="text"  
+                            value={term}
+                            onChange={(e)=> setTerm(e.target.value)}
+                            placeholder="Search"
+                        />
+                        <button class="ui icon button" >
+                            <i class="search icon"></i>
+                        </button>
+                    </div>
+                    
                 </div>
             </form>
         </div>
