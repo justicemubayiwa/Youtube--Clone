@@ -13,15 +13,15 @@ const SearchBar = ({onFormSubmit}) => {
         <div style={{marginTop: '20px',}} className="search-bar ui segment">
             <form onSubmit={onSubmit} className="ui form">
                 <div className="field">
-                    <label>Video Search</label>
                     <div style={{display: 'flex',}} >
                         <input 
+                            style={{borderTopRightRadius: '0px', borderBottomRightRadius: '0px'}}
                             type="text"  
                             value={term}
                             onChange={(e)=> setTerm(e.target.value)}
                             placeholder="Search"
                         />
-                        <button class="ui icon button" >
+                        <button style={{color: 'black', borderTopLeftRadius: '0px', borderBottomLeftRadius: '0px'}} class="ui icon button" >
                             <i class="search icon"></i>
                         </button>
                     </div>
