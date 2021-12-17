@@ -21,8 +21,8 @@ const SearchBar = ({onFormSubmit}) => {
                             onChange={(e)=> setTerm(e.target.value)}
                             placeholder="Search"
                         />
-                        <button style={{color: 'black', borderTopLeftRadius: '0px', borderBottomLeftRadius: '0px'}} class="ui icon button" >
-                            <i class="search icon"></i>
+                        <button style={{color: 'black', borderTopLeftRadius: '0px', borderBottomLeftRadius: '0px'}} className="ui icon button" >
+                            <i className="search icon"></i>
                         </button>
                     </div>
                     
