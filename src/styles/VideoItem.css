@@ -1,0 +1,20 @@
+.video-item{
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+.video-item:hover{
+  border: none;
+  color: white;
+  text-align: center;
+  margin: 2px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.video-item.item img {
+    max-width: 200px;
+}
